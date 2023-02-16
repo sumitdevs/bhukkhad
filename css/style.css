@@ -1,0 +1,232 @@
+/*css reset */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* body{
+    background-color: red;
+} */
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar : Logo and Image */
+#logo{
+    margin: 10px 35px;
+
+}
+
+#logo img{
+    height:60px;
+    margin:3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar{
+    display:flex;
+    align-items:center;
+    position: relative;
+}
+#navbar ul{
+    display:flex;
+    font-family: 'Baloo 2', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: #1e1c1d;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:.1;
+    top: 0;
+    left: 0;
+
+
+}
+
+#navbar ul li{
+    list-style:none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 22px;
+    border-radius:20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color:black;
+    display: block;
+    padding: 3px 22px;
+    border-radius:20px;
+    text-decoration: none;
+    background-color: white;
+
+}
+
+/* Home section */
+#home{
+    display:flex;
+    flex-direction: column;
+    height:510px;
+    padding:3px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../images/bhukkhad3.jpg') no-repeat center center/cover;
+    background-color: red;
+    position: absolute;
+    height:600px;
+    width:100%;
+    z-index: -1;
+    opacity:0.9;
+    top: 0;
+    left: 0;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Services Section */
+
+#services{
+    display:flex;
+    margin:10px 34px 60px;
+}
+
+#services .box{
+    border: 2px;
+    margin:2px 6px;
+    padding:10px;
+    background-color: rgb(249 245 245);
+    border-radius: 24px;
+}
+
+#services p{
+    font-family: 'Baloo 2', cursive;
+
+}
+
+#services img{
+    display:block;
+    height:200px;
+    width:200px;
+    margin:auto;
+}
+
+/* client-setion */
+#client-section{
+    height:350px;
+}
+#client-section:before{
+    content:"";
+    position:absolute;
+    background:red;
+    height:350px;
+    width:100%;
+    z-index:-1;
+    opacity: .8;
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height:150px;
+    width:150px;
+    border-radius: 100%;
+    padding: 34px;
+}
+#client-section h1{
+    color:white;
+}
+
+/* contact us section */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    position: absolute;
+    content:"";
+    height:300px;
+    z-index:-1;
+    background-color: black;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+}
+#contact-box form{
+    width:50%;
+}
+#contact-box label{
+    font-family: 'Bree Serif', serif;
+    padding:16px;
+    font-size: 1rem;
+    border-radius: 9px;;
+}
+footer{
+    background:black;
+    height:60px;
+    color:white;
+    align-items: center;
+    padding-top: 30px;
+
+}
+/* Utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: red;
+    color:white;
+    margin:17px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor:pointer;
+}
